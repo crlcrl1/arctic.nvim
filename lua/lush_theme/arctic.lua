@@ -297,7 +297,7 @@ local theme = lush(function(injected_functions)
         sym("@type.definition") { fg = blue_green },  -- identifiers in type definitions (e.g. `typedef <type> <identifier>` in C)
         sym("@type.qualifier") { fg = dark_blue },    -- type qualifiers (e.g. `const`)
 
-        sym("@attribute") { fg = blue_green },        -- attribute annotations (e.g. Python decorators)
+        sym("@attribute") { fg = '#B3AE60' },         -- attribute annotations (e.g. Python decorators)
         sym("@property") { sym("@variable.member") }, -- the key in key/value pairs
 
         -- Function
@@ -389,7 +389,7 @@ local theme = lush(function(injected_functions)
         sym("@lsp.type.interface") { fg = blue_green },
         sym("@lsp.type.struct") { fg = blue_green },
         sym("@lsp.type.typeParameter") { fg = blue_green },
-        sym("@lsp.type.parameter") { fg = orange }, -- Use a conspicuous color for semantic parameters (VSCode uses the common light_blue)
+        sym("@lsp.type.parameter") { fg = orange, gui = "bold" }, -- Use a conspicuous color for semantic parameters (VSCode uses the common light_blue)
         sym("@lsp.type.variable") { fg = light_blue },
         sym("@lsp.type.property") { fg = light_blue },
         sym("@lsp.type.enumMember") { fg = blue },
@@ -714,12 +714,15 @@ local theme = lush(function(injected_functions)
         CocSemStruct { fg = blue_green },
         CocSemTypeParameter { fg = blue_green },
         CocSemParameter { fg = orange, gui = 'bold' },
-        CocSemProperty { fg = '#7F80FD' },
+        CocSemProperty { fg = '#7F80FD', gui = 'bold' },
         CocSemEnumMember { fg = blue, gui = 'bold' },
         CocSemMacro { fg = '#C56FFF' },
+        CocSemAnnotation { fg = '#B3AE60' },
 
         CocSemVirtual { gui = 'italic' },
         CocSemDeprecated { gui = 'strikethrough' },
+
+
     }
 end)
 ---@diagnostic enable
