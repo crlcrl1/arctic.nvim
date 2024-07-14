@@ -368,13 +368,14 @@ local theme = lush(function(injected_functions)
         -- sym("@markup.list.checked") { }, -- checked todo-style list markers
         -- sym("@markup.list.unchecked") { }, -- unchecked todo-style list markers
 
-        sym("@diff.plus") { DiffTextAdded },       -- added text (for diff files)
-        sym("@diff.minus") { DiffTextDeleted },    -- deleted text (for diff files)
-        sym("@diff.delta") { DiffTextChanged },    -- changed text (for diff files)
+        sym("@diff.plus") { DiffTextAdded },                                 -- added text (for diff files)
+        sym("@diff.minus") { DiffTextDeleted },                              -- deleted text (for diff files)
+        sym("@diff.delta") { DiffTextChanged },                              -- changed text (for diff files)
 
-        sym("@tag") { fg = dark_blue },            -- XML tag names
-        sym("@tag.attribute") { fg = light_blue }, -- XML tag attributes
-        sym("@tag.delimiter") { fg = gray3 },      -- XML tag delimiters
+        sym("@tag") { fg = dark_blue },                                      -- XML tag names
+        sym("@tag.attribute") { fg = light_blue },                           -- XML tag attributes
+        sym("@tag.delimiter") { fg = gray3 },                                -- XML tag delimiters
+        sym("@keyword.storage.lifetime") { fg = '#20999D', gui = 'italic' }, -- Rust lifetime annotations
 
         --
         -- LSP semantic tokens
