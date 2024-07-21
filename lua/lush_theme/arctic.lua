@@ -708,20 +708,20 @@ local theme = lush(function(injected_functions)
         --
         -- coc.nvim
         --
-        CocSemNamespace { fg = blue_green },
-        CocSemClass { fg = blue_green },
-        CocSemEnum { fg = blue_green },
-        CocSemInterface { fg = blue_green },
-        CocSemStruct { fg = blue_green },
-        CocSemTypeParameter { fg = blue_green },
-        CocSemParameter { fg = orange, gui = 'bold' },
-        CocSemProperty { fg = '#7F80FD', gui = 'bold' },
-        CocSemEnumMember { fg = blue, gui = 'bold' },
-        CocSemMacro { fg = '#C56FFF' },
-        CocSemAnnotation { fg = '#B3AE60' },
+        CocSemTypeNamespace { fg = blue_green },
+        CocSemTypeClass { fg = blue_green },
+        CocSemTypeEnum { fg = blue_green },
+        CocSemTypeInterface { fg = blue_green },
+        CocSemTypeStruct { fg = blue_green },
+        CocSemTypeTypeParameter { fg = blue_green },
+        CocSemTypeParameter { fg = orange, gui = 'bold' },
+        CocSemTypeProperty { fg = '#7F80FD', gui = 'bold' },
+        CocSemTypeEnumMember { fg = blue, gui = 'bold' },
+        CocSemTypeMacro { fg = '#C56FFF' },
+        CocSemTypeAnnotation { fg = '#B3AE60' },
 
-        CocSemVirtual { gui = 'italic' },
-        CocSemDeprecated { gui = 'strikethrough' },
+        CocSemTypeVnirtual { gui = 'italic' },
+        CocSemTypeDneprecated { gui = 'strikethrough' },
 
 
     }
