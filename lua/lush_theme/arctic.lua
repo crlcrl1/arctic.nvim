@@ -719,6 +719,7 @@ local theme = lush(function(injected_functions)
         CocSemTypeEnumMember { fg = blue, gui = 'bold' },
         CocSemTypeMacro { fg = '#C56FFF' },
         CocSemTypeAnnotation { fg = '#B3AE60' },
+        CocSemTypeVariable { fg = light_blue, gui = 'bold' },
 
         CocSemTypeVnirtual { gui = 'italic' },
         CocSemTypeDneprecated { gui = 'strikethrough' },
