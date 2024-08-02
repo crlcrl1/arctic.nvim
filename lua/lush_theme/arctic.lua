@@ -708,7 +708,7 @@ local theme = lush(function(injected_functions)
         --
         -- coc.nvim
         --
-        CocSemTypeNamespace { fg = blue_green },
+        CocSemTypeNamespace { fg = '#ff7d7d' },
         CocSemTypeClass { fg = blue_green },
         CocSemTypeEnum { fg = blue_green },
         CocSemTypeInterface { fg = blue_green },
