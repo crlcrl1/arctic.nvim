@@ -723,6 +723,7 @@ local theme = lush(function(injected_functions)
 
         CocSemTypeVnirtual { gui = 'italic' },
         CocSemTypeDneprecated { gui = 'strikethrough' },
+        CocSemTypeLifetime { fg = '#20999D', gui = 'italic' },
 
 
     }
