@@ -713,7 +713,7 @@ local theme = lush(function(injected_functions)
         CocSemTypeEnum { fg = blue_green },
         CocSemTypeInterface { fg = blue_green },
         CocSemTypeStruct { fg = blue_green },
-        CocSemTypeTypeParameter { fg = blue_green },
+        CocSemTypeTypeParameter { fg = '#00DA00', gui = 'italic_bold' },
         CocSemTypeParameter { fg = orange, gui = 'bold' },
         CocSemTypeProperty { fg = '#7F80FD', gui = 'bold' },
         CocSemTypeEnumMember { fg = blue, gui = 'bold' },
