@@ -720,10 +720,12 @@ local theme = lush(function(injected_functions)
         CocSemTypeMacro { fg = '#C56FFF' },
         CocSemTypeAnnotation { fg = '#B3AE60' },
         CocSemTypeVariable { fg = light_blue, gui = 'bold' },
-
         CocSemTypeVnirtual { gui = 'italic' },
         CocSemTypeDneprecated { gui = 'strikethrough' },
         CocSemTypeLifetime { fg = '#20999D', gui = 'italic' },
+        CocSemTypeTypeAlias { fg = '#7CEF88' },
+        CocSemTypeAttributeBracket { fg = '#B3AE60' },
+        CocSemTypeBuiltinAttribute { fg = '#B3AE60' },
 
 
     }
