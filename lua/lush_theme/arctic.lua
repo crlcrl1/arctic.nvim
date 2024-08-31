@@ -708,7 +708,7 @@ local theme = lush(function(injected_functions)
         --
         -- coc.nvim
         --
-        CocSemTypeNamespace { fg = '#ff7d7d' },
+        -- CocSemTypeNamespace { fg = '#ff7d7d' },
         CocSemTypeClass { fg = blue_green },
         CocSemTypeEnum { fg = blue_green },
         CocSemTypeInterface { fg = blue_green },
@@ -726,7 +726,9 @@ local theme = lush(function(injected_functions)
         CocSemTypeTypeAlias { fg = '#7CEF88' },
         CocSemTypeAttributeBracket { fg = '#B3AE60' },
         CocSemTypeBuiltinAttribute { fg = '#B3AE60' },
-
+        CocSemTypeDeriveHelper { fg = '#B3AE60' },
+        CocSemTypeDecorator { fg = '#B3AE60' },
+        CocSemTypeSelfTypeKeyword { fg = dark_blue },
 
     }
 end)
