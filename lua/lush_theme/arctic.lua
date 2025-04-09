@@ -731,6 +731,7 @@ local theme = lush(function(injected_functions)
         CocSemTypeSelfTypeKeyword { fg = dark_blue },
         CocSemTypeModVariableStatic { fg = '#7F80FD', gui = 'italic_bold' },
         CocSemTypeModFunctionStatic { fg = yellow, gui = 'italic' },
+        CocSemTypeConcept { fg = blue_green }
 
     }
 end)
